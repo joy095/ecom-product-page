@@ -99,13 +99,14 @@
   cursor: pointer;
 }
 
-.card_btn p {
+.link {
   color: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.16px;
+  text-decoration: none;
 }
 
 .row {

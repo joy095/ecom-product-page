@@ -2,7 +2,7 @@ import ImageSlider from "./ImageSlider";
 import Styles from "./Product.module.css";
 import Big_img from "../assets/Mdoel-Snowboard-Lg.png";
 import ProductDescription from "./ProductDescription";
-import ProductDetails from "./ProductDetails";
+import ProductDetails, { SingleProduct } from "./ProductDetails";
 import Review from "./Review";
 import SimilarProducts from "./SimilarProducts";
 
@@ -27,7 +27,7 @@ const Product = () => {
         </div>
       </div>
 
-      <ProductDetails />
+      <SingleProduct />
       <Review />
       <SimilarProducts />
     </>

@@ -4,6 +4,7 @@ import Heart_outline from "../assets/favorite_border.svg";
 import Styles from "./ProductListCard.module.css";
 
 import { useGetProductsQuery } from "../app/api/apiSlice";
+import { Link } from "react-router-dom";
 
 export const ProductListCard = ({ content }) => {
   return (
@@ -31,7 +32,9 @@ export const ProductListCard = ({ content }) => {
         style={{ justifyContent: "space-between", width: "100%" }}
       >
         <div className={Styles.card_btn}>
-          <p>View more</p>
+          <Link className={Styles.link} to={`/details/${content.id}`}>
+            View more
+          </Link>
         </div>
 
         <div style={{ cursor: "pointer" }}>

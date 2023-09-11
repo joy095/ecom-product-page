@@ -1,6 +1,8 @@
+import { useParams } from "react-router-dom";
 import Styles from "./ProductDetails.module.css";
+import { useEffect, useState } from "react";
 
-const ProductDetails = () => {
+export const SingleProduct = ({ content }) => {
   return (
     <div className="container">
       <div className={Styles.row} style={{ paddingTop: "46px" }}>
@@ -11,9 +13,10 @@ const ProductDetails = () => {
           are six zipper-close pockets plus one roomy velcro-close pouch.
           Engineered for storage, this parka provides space for all the
           necessities you’ll bring on your next cold-weather adventure.
+          console.log(content.description);
+          {/* {content?.description} */}
         </p>
       </div>
-
       <div className={Styles.row} style={{ paddingTop: "12px" }}>
         <h5 className={Styles.specifications}>Specifications</h5>
 
@@ -45,11 +48,42 @@ const ProductDetails = () => {
           </li>
         </ul>
       </div>
-
       <h5 style={{ paddingTop: "9px" }} className={Styles.show_less}>
         Show Less
       </h5>
     </div>
+  );
+};
+
+const ProductDetails = () => {
+  const postId = useParams().id;
+
+  const [product, setProducts] = useState([]);
+
+  const fetchUserData = () => {
+    fetch(`https://dummyjson.com/products/${postId}`)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setProducts(data);
+        // console.log("data", data);
+      });
+  };
+
+  useEffect(() => {
+    fetchUserData();
+  }, []);
+
+  // console.log("product:", product);
+
+  return (
+    <>
+      {console.log("product:", product)}
+      {product.products?.map((item) => (
+        <SingleProduct content={item} key={item.id} />
+      ))}
+    </>
   );
 };
 
