@@ -1,7 +1,7 @@
 import Shoping_card from "../assets/shopping_cart.svg";
 import Heart_outline from "../assets/favorite_border.svg";
 
-import Styles from "./ProductListCArd.module.css";
+import Styles from "./ProductListCard.module.css";
 
 import { useGetProductsQuery } from "../app/api/apiSlice";
 
