@@ -1,0 +1,52 @@
+.about_item,
+.specifications,
+.show_less {
+  color: #5c7995;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+  position: relative;
+}
+
+.details {
+  color: #000;
+  text-align: justify;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 12px;
+}
+
+.ul {
+  padding-left: 18px;
+  padding-top: 6px;
+  margin: 0;
+}
+
+.bullet_point {
+  color: #000;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 175% */
+}
+
+.show_less::after {
+  content: "";
+  position: absolute;
+  background: url(../assets/keyboard_arrow_down.svg) no-repeat center center;
+  width: 32px;
+  height: 30px;
+  left: -9px;
+  top: 0;
+  cursor: pointer;
+}
+.show_less {
+  padding-left: 25px;
+  cursor: pointer;
+  position: relative;
+}

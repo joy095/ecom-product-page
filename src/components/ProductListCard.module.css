@@ -1,0 +1,114 @@
+.product_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  height: 390px;
+  max-width: 230px;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  /* border: 0.2px solid rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+}
+
+.heart_wrap {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none !important;
+  cursor: pointer;
+}
+
+.img_wrap {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+.img_wrap img {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.price_number {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.desc {
+  color: #1e1e1e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 12px;
+  padding-left: 10px;
+  line-height: normal;
+  max-height: 65px;
+  overflow: hidden;
+}
+
+.status {
+  padding-left: 10px;
+  color: #2cb708;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card_btn {
+  display: flex;
+  width: 130px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  padding-left: 10px;
+
+  border-radius: 8px;
+  background: #000;
+  cursor: pointer;
+}
+
+.card_btn p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.16px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}

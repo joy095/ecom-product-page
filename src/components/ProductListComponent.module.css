@@ -1,0 +1,18 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.side_nav {
+  width: 220px;
+  padding: 10px;
+}
+
+.products {
+  padding: 10px;
+
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
